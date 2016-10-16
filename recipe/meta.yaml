@@ -26,6 +26,7 @@ test:
 about:
   home: http://pypi.python.org/pypi/six/
   license: MIT
+  license_family: MIT
   license_file: LICENSE
   summary: Python 2 and 3 compatibility utilities
   description: |
