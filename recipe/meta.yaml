@@ -7,7 +7,7 @@ package:
 source:
   fn: six-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/s/six/six-{{ version }}.tar.gz
-  md5: 34eed507548117b2ab523ab14b2f8b55
+  sha256: 105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a
 
 build:
   number: 0
