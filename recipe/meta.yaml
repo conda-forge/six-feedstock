@@ -1,13 +1,15 @@
+{% set name = "six" %}
 {% set version = "1.10.0" %}
+{% set sha256 = "105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a" %}
 
 package:
-  name: six
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: six-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/s/six/six-{{ version }}.tar.gz
-  sha256: 105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   number: 0
