@@ -15,6 +15,18 @@ both Python 2 and 3 without modification. six consists of only one Python
 file, so it is painless to copy into a project.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/six-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/six-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/six-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/six-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/six-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/six-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/six/badges/version.svg)](https://anaconda.org/conda-forge/six)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/six/badges/downloads.svg)](https://anaconda.org/conda-forge/six)
+
 Installing six
 ==============
 
@@ -35,7 +47,6 @@ It is possible to list all of the versions of `six` available on your platform w
 ```
 conda search six --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -71,18 +82,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/six-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/six-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/six-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/six-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/six-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/six-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/six/badges/version.svg)](https://anaconda.org/conda-forge/six)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/six/badges/downloads.svg)](https://anaconda.org/conda-forge/six)
 
 
 Updating six-feedstock
