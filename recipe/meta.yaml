@@ -39,7 +39,7 @@ about:
     both Python 2 and 3 without modification. six consists of only one Python
     file, so it is painless to copy into a project.
   doc_url: http://pythonhosted.org/six/
-  dev_url: https://bitbucket.org/gutworth/six
+  dev_url: https://github.com/benjaminp/six
 
 extra:
   recipe-maintainers:
