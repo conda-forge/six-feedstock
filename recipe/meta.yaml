@@ -9,9 +9,9 @@ source:
   sha256: 30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -23,6 +23,10 @@ requirements:
 test:
   imports:
     - six
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://six.readthedocs.io/
