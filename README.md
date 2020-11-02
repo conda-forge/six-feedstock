@@ -5,9 +5,13 @@ Home: https://six.readthedocs.io/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/six-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python 2 and 3 compatibility utilities
+
+Development: https://github.com/benjaminp/six
+
+Documentation: https://six.readthedocs.io/
 
 Six provides simple utilities for wrapping over differences between
 Python 2 and Python 3. It is intended to support codebases that work on
