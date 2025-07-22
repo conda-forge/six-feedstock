@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+schema_version: 1
+
+context:
+  version: 1.17.0
+
+package:
+  name: six
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/s/six/six-${{ version }}.tar.gz
+  sha256: ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81
+
+build:
+  number: 1
+  noarch: python
+  script:
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports: six
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - 3.13.*
+
+about:
+  license: MIT
+  license_file: LICENSE
+  summary: Python 2 and 3 compatibility utilities
+  description: |
+    Six provides simple utilities for wrapping over differences between
+    Python 2 and Python 3. It is intended to support codebases that work on
+    both Python 2 and 3 without modification. six consists of only one Python
+    file, so it is painless to copy into a project.
+  homepage: https://six.readthedocs.io/
+  repository: https://github.com/benjaminp/six
+  documentation: https://six.readthedocs.io/
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - msarahan
+    - ocefpaf

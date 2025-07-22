@@ -18,7 +18,6 @@ Python 2 and Python 3. It is intended to support codebases that work on
 both Python 2 and 3 without modification. six consists of only one Python
 file, so it is painless to copy into a project.
 
-
 Current build status
 ====================
 
